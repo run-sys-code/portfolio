@@ -35,21 +35,17 @@
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
+			-webkit-scrollbar;
 			background-size: cover;
 			background-blend-mode: cover;
 			margin: 0px;
 		}
 	</style>
-
-	<!-- linking local javascipt -->
-	<script src="assets/js/jscript.js"></script>
-
-	<!-- linking bootstrap js -->
-	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+	<div class="container">
 	<header data-bs-theme="dark">
-		<nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary bg-black" style="--bs-bg-opacity: .9;">
+		<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" style="--bs-bg-opacity: .9;">
   			<div class="container-fluid">
 
   				<!-- Logo -->
@@ -72,9 +68,9 @@
             				Info
           					</a>
           					<ul class="dropdown-menu">
-            					<li><a class="dropdown-item" href="#">About Me</a></li>
-            					<li><a class="dropdown-item" href="#">Goals</a></li>
-            					<li><a class="dropdown-item" href="#">Skills</a></li>
+            					<li><a class="dropdown-item" href="#div_about" t>About Me</a></li>
+            					<li><a class="dropdown-item" href="#div_goals">Goals</a></li>
+            					<li><a class="dropdown-item" href="#div_skills">Skills</a></li>
             					<li><hr class="dropdown-divider"></li>
             					<li><a class="dropdown-item" href="#">Resume</a></li>
           					</ul>
@@ -93,6 +89,7 @@
     								I will be updating this section once a project has been published.
   								</p>
         					</div>
+        				</li>
         				<li class="nav-item">
           					<a class="nav-link" href="#">Contact</a>
         				</li>
@@ -101,19 +98,87 @@
   			</div>
 		</nav>
 	</header>
-	<main>
-  			<a href="https://www.linkedin.com/in/run-sys-code" target="_blank" class="btn position-fixed bottom-0" style="margin-bottom: 120px;">
+	<main 
+			<div class="container"">
+				<div class="row" id="div_about">
+					<div>
+						<h2 class="d-flex justify-content-center retro">About Me!</h2>
+					</div>
+				</div>
+				<div class="row d-flex justify-content-end">
+					<div class="col-6 form-text bg-dark text-light rounded-4 mx-1 mt-3" style="--bs-bg-opacity: .9;" ><p>
+						<h4>Hello! I'm <span class="etc">&lt;</span>run.sys<span class="etc">/&gt;</span> — Aspiring Frontend Web Developer</h4>
+						Welcome to my portfolio! I'm a passionate and self-driven aspiring frontend web developer with a growing skill set in HTML, CSS, and JavaScript. Although I don’t have professional experience yet, I’ve been actively learning and building projects that showcase my understanding of responsive design, clean code, and user-focused interfaces.<br/><br/>
+
+						This portfolio is a collection of the work I’ve done so far — from small personal projects to creative challenges I’ve tackled along the way. I’m constantly learning, improving, and excited to contribute to real-world web development teams.<br/><br/>
+
+							Thanks for stopping by — let’s build something great together!</p>
+					</div>
+				</div>
+				<div class="row" id="div_goals">
+					<div>
+						<h2 class="d-flex justify-content-center retro">Goals!</h2>
+					</div>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="col-5 form-text bg-dark text-light rounded-4 mx-3 mt-3" style="--bs-bg-opacity: .9;" >
+							<p><h4 class="text-center"><i class="fa-solid fa-wand-magic-sparkles fa-lg mx-2"></i>Short Term Goals</h4>
+							As a new freelance frontend developer, I’m focused on learning HTML, CSS, and JavaScript, and building a portfolio to showcase my work. Over the next few months, I plan to:<br/><br/>
+								<ul>
+									<li>Improve my frontend skills.</li>
+									<li>Create a solid portfolio.</li>
+									<li>Get the hang of responsive design and Git.</li>
+									<li>Join coding challenges and connect with other devs.</li>
+								</ul>
+								These steps will help me build a strong foundation for my freelance career.
+								
+							</p>
+					</div>
+					<div class="col-5 form-text bg-dark text-light rounded-4 mx-3 mt-3" style="--bs-bg-opacity: .9;" >
+							<p><h4 class="text-center"><i class="fa-solid fa-flag-checkered fa-lg mx-2"></i>Long Term Goals</h4>
+							Looking ahead, my long-term goals as a freelance front-end developer are to continue growing my technical skills, expand my client base, and build a reputation in the industry. Over time, I aim to:<br/><br/>
+							<ul>
+								<li>Master advanced front-end technologies (like React, Vue, and advanced JavaScript).</li>
+								<li>Specialize in areas like UI/UX design or performance optimization.</li>
+								<li>Grow my portfolio with high-quality projects and work with bigger clients.</li>
+								<li>Build a steady stream of clients and create long-term business relationships.</li>
+							</ul>
+							I want to become an expert in front-end development and keep challenging myself with more complex projects.
+							</p>
+					</div>
+				</div>
+				<div class="row" id="div_skills">
+					<div>
+						<h2 class="d-flex justify-content-center retro mt-5">Skills!</h2>
+					</div>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="col-8 form-text bg-dark text-light rounded-4 mx-1 mt-3" style="--bs-bg-opacity: .9;" ><p>
+						<h4 class="text-center"><i class="fa-solid fa-code fa-lg mx-2"></i>Frontend Development</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+			</p>
+  			<a href="https://www.linkedin.com/in/run-sys-code" target="_blank" class="btn position-fixed bottom-0" style="margin-bottom: 100px;">
     			<i class="flt-icon fa-brands fa-linkedin fa-xl"></i>
   			</a>
-  			<a href="https://github.com/run-sys-code" target="_blank" class="btn position-fixed bottom-0" style="margin-bottom: 75px;">
+  			<a href="https://github.com/run-sys-code" target="_blank" class="btn position-fixed bottom-0" style="margin-bottom: 55px;">
     			<i class="flt-icon fa-brands fa-github fa-xl"></i>
   			</a>
-  			<a href="#" class="btn position-fixed bottom-0" style="margin-bottom: 30px;">
+  			<a href="#" class="btn position-fixed bottom-0" style="margin-bottom: 10px;">
     			<i class="flt-icon fa-solid fa-envelope fa-xl"></i>
   			</a>
 	</main>
 	<footer class="footer bg-dark" style="--bs-bg-opacity: .8;">
 		<div>&copy; 2025. Built by <span class="etc">&lt;</span>run.sys<span class="etc">/&gt;</span></div>
 	</footer>
+</div>
+
+	<!-- linking local javascipt -->
+	<script src="assets/js/jscript.js"></script>
+
+	<!-- linking bootstrap js -->
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
