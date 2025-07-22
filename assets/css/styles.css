@@ -1,0 +1,72 @@
+/*
+	font-family: 'Bungee', cursive;
+	font-family: 'Kanit', sans-serif;
+	font-family: 'Righteous', cursive;
+	font-family: 'Cinzel', serif;
+	font-family: 'Overpass', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Fredoka One', cursive;
+	font-family: 'VT323', monospace;
+	font-family: 'Audiowide', cursive;
+*/
+
+/* style reset */
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-style: "Roboto", sans-serif;
+	/* border: 1px solid red; */
+}
+/* general rules */
+footer {
+	position: absolute;
+	padding-left: 10px;
+  	bottom: 0;
+  	width: 100%;
+  	height: 30px; /* Set the fixed height of the footer here */
+  	font-size: 16px;
+	text-align: left;
+	color:white;
+	font-family: 'VT323', monospace;
+	text-shadow: 1px 4px 4px rgba(200,200,200,1);
+}
+
+i {
+	margin: 0px 5px;
+}
+
+.logo{
+	color: white;
+	font-size: 25px;
+	text-align: left;
+	font-family: 'VT323', monospace;
+	text-shadow: 1px 4px 4px rgba(150,150,150,1);
+}
+
+.etc{
+	color:red;
+}
+
+.info{
+	margin: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: lightgray;
+	font-size: 15px;
+	text-align: left;
+	font-family: 'Audiowide', cursive;
+	text-shadow: 1px 4px 4px rgba(150,150,150,1);
+}
+
+.flt-icon {
+	height: 40px;
+  	width: 40px;
+  	margin-left: -5px;
+  	padding-left: 0px;
+  	padding-top: 20px;
+  	color: white;
+  	background-color: rgba(35,35,35,0.8);
+  	border-radius: 50%;
+  	display: inline-block;
+}
